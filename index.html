@@ -1,0 +1,36 @@
+<!doctype html>
+    <html ng-app>
+      <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+      </head>
+      <body>
+
+  <div>
+    <label>Expenses:</label>
+
+    <h2>Rent</h2>
+    <input type="number" ng-model="rent" placeholder="Rent Amount">
+
+    <h2>Power</h2>
+    <input type="number" ng-model="power" placeholder="Power Bill">
+
+    <h2>Water</h2>
+    <input type="number" ng-model="water" placeholder="Water Bill">
+
+    <h2>Cable</h2>
+    <input type="number" ng-model="cable" placeholder="Cable Bill">
+
+    <h2>Internet</h2>
+    <input type="number" ng-model="internet" placeholder="Internet Bill">
+
+    <h2>Miscellaneous Common Expenses</h2>
+    <input type="number" ng-model="misc" placeholder="Other">
+
+    <hr>
+    <h1>Hello {{(rent + power + water + cable + internet + misc) / 3| number:0 }}!</h1>
+  </div>
+
+      </body>
+    </html>
+
+
