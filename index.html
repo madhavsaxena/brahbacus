@@ -19,14 +19,14 @@
   </header>
 
   <section class="results-header" ng-show="goResult" id="resultbox">
-    <h2><span>It's {{(rent + power + water + cable + internet + misc) / roommates| number:0 }}, brah!</span></h2>
+    <h2><span>It's {{(rent + power + water + cable + internet + misc) / roommates| number:0 }} each, brah!</span></h2>
   </section>
 
   <section class="the-numbers">
    <div class="row-one">
     <div class="question-one">
     <h3>Roommates</h3>
-    <input type="number" ng-model="roommates" placeholder="# of Roommates">
+    <input type="number" ng-model="roommates" placeholder="Roomies (incl. you)">
     </div>
 
     <div class="question-two">
