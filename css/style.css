@@ -19,4 +19,4 @@ h2 {text-align:center;}
 h2 span {background:#f9e3a3;padding:10px;}
 footer {overflow:hidden;}
 footer p {text-align:center;font-size:12px;}
-.results-header {width:340px;height:100px;}
+.results-header {min-height:80px;}
