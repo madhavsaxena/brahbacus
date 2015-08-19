@@ -1,7 +1,7 @@
 body {background:#eec550;border-top:5px #f9e3a3 solid;border-left:5px #203e5f solid; border-right: 5px #203e5f solid;font-family:'Sarala',sans-serif;}
 header {margin-bottom:35px;}
 header h1 {text-align:center;text-transform:uppercase;color:#1a2634;}
-header p {text-align:center;color:#1a2634;}
+header p {text-align:center;color:#1a2634;padding-left:5px;padding-right:5px;}
 
 .the-numbers {width:90%;display:block;margin-left:auto;margin-right:auto;overflow:hidden;}
 .row-one div {background:#1a2634;width:21.25%;padding: 25px 25px 50px 25px;float:left;margin-bottom:35px;box-sizing:border-box;margin-right:5%;}
@@ -24,4 +24,8 @@ footer p {text-align:center;font-size:12px;}
 
 @media (min-width:500px) and (max-width: 800px) {
 	.row-one div {width:42.5%;margin-right:15%;} .row-one div:nth-child(2) {margin-right:0;} .row-two div {width:42.5%;margin-right:15%;} .row-two div:nth-child(even) {margin-right:0} 
+}
+
+@media (min-width:300px) and (max-width: 500px) {
+	.row-one div {width:84.5%;margin-right:auto !important;margin-left:auto;display:block;float:none;} .row-two div {width:84.5%;margin-right:auto !important;display:block;margin-left:auto;float:none;}
 }
