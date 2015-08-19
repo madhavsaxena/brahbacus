@@ -1,0 +1,22 @@
+body {background:#eec550;border-top:5px #f9e3a3 solid;border-left:5px #203e5f solid; border-right: 5px #203e5f solid;font-family:'Sarala',sans-serif;}
+header {margin-bottom:35px;}
+header h1 {text-align:center;text-transform:uppercase;color:#1a2634;}
+header p {text-align:center;color:#1a2634;}
+
+.the-numbers {width:90%;display:block;margin-left:auto;margin-right:auto;overflow:hidden;}
+.row-one div {background:#1a2634;width:21.25%;padding: 25px 25px 50px 25px;float:left;margin-bottom:35px;box-sizing:border-box;margin-right:5%;}
+.row-one div:last-child {margin-right:0;}
+.row-two div {background:#1a2634;width:21.25%;padding: 25px 25px 50px 25px;float:left;margin-bottom:35px;box-sizing:border-box;margin-right:5%}
+.row-two div:last-child {margin-right:0;padding:25px 25px 20px}
+.the-numbers h3 {color:#f9e3a3;text-align:center;text-transform:uppercase;}
+.the-numbers input {color:#203e5f;text-align: center;padding-top: 5px;padding-bottom: 5px;}
+.question-eight {border:5px #f9e3a3 solid;border-radius:5px;}
+.question-eight img {display:block;margin-left:auto;margin-right:auto;max-width:64px;}
+.result-btn {text-align: center;text-transform: uppercase;color:#f9e3a3;width:100%;text-decoration:none !important;}
+.result-btn:visited {color:#f9e3a3}
+h2 {text-align:center;}
+
+h2 span {background:#f9e3a3;padding:10px;}
+footer {overflow:hidden;}
+footer p {text-align:center;font-size:12px;}
+.results-header {min-height:50px;}
