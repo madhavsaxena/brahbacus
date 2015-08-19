@@ -1,36 +1,79 @@
 <!doctype html>
     <html ng-app>
       <head>
+      <meta charset="UTF-8">
       <title>the BRAHBACUS - divide monthly expenses between bros</title>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Sarala:400,700' rel='stylesheet' type='text/css'>
       </head>
       <body>
 
-  <div>
-    <label>Expenses:</label>
+  <header>
+    <h1>Brahbacus : a monthly housing expense calculator</h1>
+    <p><strong>brah</strong> | noun | a male friend or associate.<br>
+    <strong>abacus</strong> | noun | an oblong frame with rows of wires or grooves along which beads are slid, used for calculating.
+    </p>
+  </header>
 
-    <h2>Rent</h2>
+  <section class="results-header" ng-show="goResult" id="resultbox">
+    <h2><span>It's {{(rent + power + water + cable + internet + misc) / roommates| number:0 }}, brah!</span></h2>
+  </section>
+
+  <section class="the-numbers">
+   <div class="row-one">
+    <div class="question-one">
+    <h3>Roommates</h3>
+    <input type="number" ng-model="roommates" placeholder="# of Roommates">
+    </div>
+
+    <div class="question-two">
+    <h3>Rent</h3>
     <input type="number" ng-model="rent" placeholder="Rent Amount">
+    </div>
 
-    <h2>Power</h2>
+    <div class="question-three">
+    <h3>Power</h3>
     <input type="number" ng-model="power" placeholder="Power Bill">
+    </div>
 
-    <h2>Water</h2>
+    <div class="question-four">
+    <h3>Water</h3>
     <input type="number" ng-model="water" placeholder="Water Bill">
+    </div>
+   </div>
 
-    <h2>Cable</h2>
+   <div class="row-two">
+
+    <div class="question-five">
+    <h3>Cable</h3>
     <input type="number" ng-model="cable" placeholder="Cable Bill">
+    </div>
 
-    <h2>Internet</h2>
+    <div class="question-six">
+    <h3>Internet</h3>
     <input type="number" ng-model="internet" placeholder="Internet Bill">
+    </div>
 
-    <h2>Miscellaneous Common Expenses</h2>
+    <div class="question-seven">
+    <h3>Misc. Expenses</h3>
     <input type="number" ng-model="misc" placeholder="Other">
+    </div>
+   
 
-    <hr>
-    <h1>It's {{(rent + power + water + cable + internet + misc) / 3| number:0 }}, brah!</h1>
-  </div>
+   <div class="question-eight">
+   <a href="#resultbox" ng-click="goResult = !goResult" ng-class="{ active: goResult }" class="result-btn"><h3>Calculate</h3><img src="images/calculator.png"></a>
+   </div>
+</div>
+
+</section>
+
+  <footer>
+    <p>a quick n dirty angularjs playground by <a href="http://www.namassolutions.com">madhav saxena</a>. do whatever you want with this.</p>
+  </footer>
+    
 
       </body>
     </html>
